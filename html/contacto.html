@@ -1,0 +1,121 @@
+<!DOCTYPE html><!--Alberto Méndez Conrado--><!--1 DAMA-->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon">
+</head>
+<body>
+    <div class="header">
+        <h1>La web de las artes</h1>
+        <h2>SECCIÓN: Contáctanos</h2>
+        <ul>
+            <li>
+                <a href="../Index.html">Inicio</a>
+            </li>
+            <li>
+                <a href="music.html">Música</a>
+            </li>
+            <li>
+                <a href="cine.html">Cine</a>
+            </li>
+            <li>
+                <a href="generosLiterarios.html">Géneros Literarios</a>
+            </li>
+            <li>
+                <a href="multimedia.html">Multimedia</a>
+            </li>
+            <li>
+                <a href="#"id="selected">Contáctanos</a>
+            </li>            
+        </ul>
+    </div>
+    <hr>
+    <div class="main-section">
+        <form name="formulario" method="post" enctype="multipart/form-data" >
+            <fieldset>
+                <legend>Datos Personales</legend>
+                <div>
+                    <label>
+                        Nombre:
+                        <input type="text" name="nombre" placeholder="Introduce tu nombre..." required title="Introduzca un nombre"/>
+                        *
+                     </label> 
+                </div>
+                <div>
+                    <label>
+                        Apellidos:
+                        <input type="text" name="apellidos" placeholder="Introduce tu apellido..." required>
+                        *
+                     </label>
+                </div>
+                <div>
+                    <label>
+                        Email:
+                        <input type="text" name="correo" pattern="^.+@(gmail|hotmail)\.com$"  required placeholder="usuario@email.com"
+                         title="El formato es @gmail.com o @hotmail.com">
+                        *
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        Fecha de Nacimiento:
+                        <input type="date" name="edad" min="18" max="100" placeholder="18" >
+                    </label>
+                </div>
+                <div>
+                    <label>
+                        Edad:
+                        <input type="number" min="18" max="100"/>
+                    </label>
+                </div>
+                <div>
+                    Sexo:
+                    <label><input type="radio" name="sexo" value="H" checked/>Hombre</label>
+                    <label><input type="radio" name="sexo" value="M"/>Mujer</label>
+                </div>
+                <div>
+                    País:
+                    <label>
+                        <label for="idioma"></label>
+                        <select id="idioma" name="idioma">
+                            <option value="" selected="selected" >- selecciona -</option>
+                            <option value="España"> España</option>
+                            <option value="Italia"> Italia</option>
+                            <option value="Francia"> Francia</option>
+                            <option value="Portugal"> Portugal</option>
+                        </select>
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset>
+                <legend>Otros Datos</legend>
+                <div>
+                    Mensaje:
+                    <textarea type="text" name="texto" rows="10" cols="40" spellcheck="true" placeholder="Introduce tu texto..."></textarea>
+                </div>
+                <div>
+                    Adjuntar foto:
+                    <input type="file" name="adjunto" accept=".jpg,.png" multiple/>
+                </div>
+            </fieldset>
+            <div>
+                <input type="checkbox" name="condiciones" required/>
+                Aceptas las condiciones
+            </div>
+            <button type="submit">Enviar:</button>
+            <button type="reset">Reiniciar:</button>
+        </form>
+        <div>
+            <h2>Centro de Referencia</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3507.7792920263323!2d-16.285820423840203!3d28.456068892071023!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xc41cceee5a8035f%3A0xab9f2a74d9e68b51!2sCIFP%20C%C3%A9sar%20Manrique!5e0!3m2!1ses!2ses!4v1708250006999!5m2!1ses!2ses" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    <hr>
+    <div class="footer">
+        <a href="#">Inicio</a>
+    </div>
+
+</body>
+</html>
